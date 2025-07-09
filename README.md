@@ -1,79 +1,72 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 맞춤형 가구 제작 의뢰 어플리케이션 <GAGU> 서버 입니다.
 
-# Getting Started
+![image](https://github.com/user-attachments/assets/cf48a16d-fffa-416e-a307-c552574890ba)
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-## Step 1: Start the Metro Server
+## 프로젝트 기간
+- 2024-03 ~ 진행중.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## 💡 Background
+- 코로나 이후 맞춤형 가구에 대한 관심이 늘어났음. 실제로, VMR 통계기관의 맞춤형 가구 시장의 규모 성장 지표에서 2024~2030년 동안 **CAGR 24.8% 의 성장률**이 예상됨.
+- 수요에 비해 전국 공방의 등록 수와 중계 역할이 부족함.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## 📝 Features
+> GAGU 서비스의 기능은 크게 4가지로 구분됩니다.
 
-```bash
-# using npm
-npm start
+### 1. 2D-LLM 이미지 생성
 
-# OR using Yarn
-yarn start
+```
+✔️ 사용자가 원하는 가구를 직접 생성하는 기능
 ```
 
-## Step 2: Start your Application
+- 💻 **Features Preview**
+    
+![image](https://github.com/user-attachments/assets/d09ff69f-284a-4b21-8683-2a61763d24c1)
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-### For Android
+    
 
-```bash
-# using npm
-npm run android
+### 2. 3D-Renderling 오브젝트 반환
 
-# OR using Yarn
-yarn android
+```
+✔️ 생성한 2D 가구 중 제작을 희망하는 가구 이미지를 3D 오브젝트로 생성하는 기능
 ```
 
-### For iOS
+- 💻 **Features Preview**
 
-```bash
-# using npm
-npm run ios
+![image](https://github.com/user-attachments/assets/3b125275-9b24-4432-8e50-f261e8276b2f)
 
-# OR using Yarn
-yarn ios
+
+### 3. 사용자와 공방 관계자 간 실시간 채팅
+
+```
+✔️ 맞춤형 제작 의뢰를 희망하는 경우, GAGU 서비스에 등록된 공방에 실시간 채팅을 통해 의뢰하는 기능
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+- 💻 **Features Preview**
+    
+![image](https://github.com/user-attachments/assets/fe0d5e1b-94b4-40dc-9950-c4c3c1427dc4)
+   
+### 4. 사용자 로그인 | 회원가입
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+```
+✔️ 사용자 소셜 로그인, 일반 로그인
+```
 
-## Step 3: Modifying your App
+- 💻 **Features Preview**
 
-Now that you have successfully run the app, let's modify it.
+![image](https://github.com/user-attachments/assets/f0d52790-f240-4daa-a18a-b48d590ef683)
+    
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+### 사용한 기술 및 라이브러리
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+- Backend: <img src="https://img.shields.io/badge/springboot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/flask-000000?style=flat-square&logo=flask&logoColor=white"/> 
+- App: <img src="https://img.shields.io/badge/React%20Native-61DAFB?style=flat-square&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/Expo-000020?style=flat-square&logo=expo&logoColor=white"/> <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=three.js&logoColor=white"/>
+- Database : <img src="https://img.shields.io/badge/mariadb-003545?style=flat-square&logo=mariadb&logoColor=white"/> <img src="https://img.shields.io/badge/redis-FF4438?style=flat-square&logo=redis&logoColor=white"/>
+- Container : <img src="https://img.shields.io/badge/docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+- Infra : <img src="https://img.shields.io/badge/vmware-607078?style=flat-square&logo=vmware&logoColor=white"/> 자체 서버 구축
+- API Document: <img src="https://img.shields.io/badge/swagger-85EA2D?style=flat-square&logo=swagger&logoColor=white"/>
 
-## Congratulations! :tada:
+### DATABASE Schema
 
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+![image](https://github.com/user-attachments/assets/903ed9bd-4326-46e2-9064-40a151b02c54)
